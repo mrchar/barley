@@ -12,14 +12,20 @@ export default [
       {
         path: 'users',
         name: 'userManagement',
-        component: () => import('@/pages/system/users.vue'),
+        component: () => import('@/pages/system/user.vue'),
         meta: { title: '用户管理' },
       },
       {
         path: 'roles',
         name: 'roleManagement',
-        component: () => import('@/pages/system/roles.vue'),
+        component: () => import('@/pages/system/role.vue'),
         meta: { title: '角色管理' },
+      },
+      {
+        path: 'authority',
+        name: 'authorityManagement',
+        component: () => import('@/pages/system/authority.vue'),
+        meta: { title: '权限管理' },
       },
     ],
   },
